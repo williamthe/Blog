@@ -1,0 +1,475 @@
+2012/10/09 16:28:33 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "C:\wamp\www\yii\blog\assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in C:\wamp\www\yii\framework\web\CAssetManager.php:116
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CAssetManager.php(101): CAssetManager->setBasePath('C:\wamp\www\yii...')
+#1 C:\wamp\www\yii\framework\web\CAssetManager.php(219): CAssetManager->getBasePath()
+#2 C:\wamp\www\yii\framework\web\CClientScript.php(449): CAssetManager->publish('C:\wamp\www\yii...')
+#3 C:\wamp\www\yii\framework\web\CClientScript.php(486): CClientScript->getCoreScriptUrl()
+#4 C:\wamp\www\yii\framework\web\CClientScript.php(302): CClientScript->getPackageBaseUrl('jquery')
+#5 C:\wamp\www\yii\framework\web\CClientScript.php(195): CClientScript->renderCoreScripts()
+#6 C:\wamp\www\yii\framework\web\CController.php(352): CClientScript->render('<!DOCTYPE html ...')
+#7 C:\wamp\www\yii\framework\web\CController.php(789): CController->processOutput('<!DOCTYPE html ...')
+#8 C:\wamp\www\yii\blog\protected\controllers\SiteController.php(66): CController->render('contact', Array)
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionContact()
+#10 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('contact')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/contact')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\yii\blog\index.php(12): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/blog/index.php?r=site/contact
+HTTP_REFERER=http://localhost/yii/blog/index.php?r=site/page&view=about
+---
+2012/10/09 17:15:11 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "C:\wamp\www\yii\blog\assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in C:\wamp\www\yii\framework\web\CAssetManager.php:116
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CAssetManager.php(101): CAssetManager->setBasePath('C:\wamp\www\yii...')
+#1 C:\wamp\www\yii\framework\web\CAssetManager.php(219): CAssetManager->getBasePath()
+#2 C:\wamp\www\yii\framework\web\CClientScript.php(449): CAssetManager->publish('C:\wamp\www\yii...')
+#3 C:\wamp\www\yii\framework\web\CClientScript.php(486): CClientScript->getCoreScriptUrl()
+#4 C:\wamp\www\yii\framework\web\CClientScript.php(302): CClientScript->getPackageBaseUrl('jquery')
+#5 C:\wamp\www\yii\framework\web\CClientScript.php(195): CClientScript->renderCoreScripts()
+#6 C:\wamp\www\yii\framework\web\CController.php(352): CClientScript->render('<!DOCTYPE html ...')
+#7 C:\wamp\www\yii\framework\web\CController.php(789): CController->processOutput('<!DOCTYPE html ...')
+#8 C:\wamp\www\yii\blog\protected\controllers\SiteController.php(66): CController->render('contact', Array)
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionContact()
+#10 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('contact')
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/contact')
+#15 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\yii\blog\index.php(12): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/blog/index.php?r=site/contact
+HTTP_REFERER=http://localhost/yii/blog/index.php?r=site/page&view=about
+---
+2012/10/10 15:37:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in C:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('login')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\blog\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/blog/index.php?r=login
+---
+2012/10/11 03:15:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gii')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\blog\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/blog/index.php?r=gii
+---
+2012/10/11 03:18:13 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog.post' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `post`.
+in C:\wamp\www\yii\blog\index.php (12)
+2012/10/11 06:00:51 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog.post' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `post`.
+in C:\wamp\www\yii\blog\index.php (12)
+2012/10/11 06:00:54 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog.post' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `post`.
+in C:\wamp\www\yii\blog\index.php (12)
+2012/10/11 06:00:57 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog.post' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `post`.
+in C:\wamp\www\yii\blog\index.php (12)
+2012/10/11 06:00:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog.post' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `post`.
+in C:\wamp\www\yii\blog\index.php (12)
+2012/10/11 06:01:07 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog.post' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `post`.
+in C:\wamp\www\yii\blog\index.php (12)
+2012/10/11 10:00:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "add".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('add')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('add')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('post/add')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\yii\blog\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/blog/index.php?r=post/add
+---
+2012/10/11 10:22:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('index.php')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('index.php')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('post/index.php')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\yii\blog\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/blog/index.php?r=post/index.php
+---
+2012/10/13 17:13:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "create".' in C:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('create')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\yii\blog\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/blog/?r=create
+---
+2012/10/13 17:28:25 [error] [php] Use of undefined constant id - assumed 'id' (C:\wamp\www\yii\blog\protected\views\site\index.php:4)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\yii\blog\protected\controllers\SiteController.php(37): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii\blog\index.php(12): CWebApplication->run()
+REQUEST_URI=/yii/blog/
+in C:\wamp\www\yii\blog\protected\views\site\index.php (4)
+in C:\wamp\www\yii\blog\protected\controllers\SiteController.php (37)
+in C:\wamp\www\yii\blog\index.php (12)
+2012/10/13 17:28:51 [error] [php] Undefined variable: dataProvider (C:\wamp\www\yii\blog\protected\views\site\index.php:4)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\yii\blog\protected\controllers\SiteController.php(37): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii\blog\index.php(12): CWebApplication->run()
+REQUEST_URI=/yii/blog/
+in C:\wamp\www\yii\blog\protected\views\site\index.php (4)
+in C:\wamp\www\yii\blog\protected\controllers\SiteController.php (37)
+in C:\wamp\www\yii\blog\index.php (12)
+2012/10/13 17:29:36 [error] [php] Undefined variable: dataProvider (C:\wamp\www\yii\blog\protected\views\site\index.php:4)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\yii\blog\protected\controllers\SiteController.php(37): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii\blog\index.php(12): CWebApplication->run()
+REQUEST_URI=/yii/blog/
+in C:\wamp\www\yii\blog\protected\views\site\index.php (4)
+in C:\wamp\www\yii\blog\protected\controllers\SiteController.php (37)
+in C:\wamp\www\yii\blog\index.php (12)
+2012/10/13 17:29:37 [error] [php] Undefined variable: dataProvider (C:\wamp\www\yii\blog\protected\views\site\index.php:4)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\yii\blog\protected\controllers\SiteController.php(37): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii\blog\index.php(12): CWebApplication->run()
+REQUEST_URI=/yii/blog/
+in C:\wamp\www\yii\blog\protected\views\site\index.php (4)
+in C:\wamp\www\yii\blog\protected\controllers\SiteController.php (37)
+in C:\wamp\www\yii\blog\index.php (12)
+2012/10/13 17:29:38 [error] [php] Undefined variable: dataProvider (C:\wamp\www\yii\blog\protected\views\site\index.php:4)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\yii\blog\protected\controllers\SiteController.php(37): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii\blog\index.php(12): CWebApplication->run()
+REQUEST_URI=/yii/blog/
+in C:\wamp\www\yii\blog\protected\views\site\index.php (4)
+in C:\wamp\www\yii\blog\protected\controllers\SiteController.php (37)
+in C:\wamp\www\yii\blog\index.php (12)
+2012/10/13 17:29:38 [error] [php] Undefined variable: dataProvider (C:\wamp\www\yii\blog\protected\views\site\index.php:4)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\yii\blog\protected\controllers\SiteController.php(37): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii\blog\index.php(12): CWebApplication->run()
+REQUEST_URI=/yii/blog/
+in C:\wamp\www\yii\blog\protected\views\site\index.php (4)
+in C:\wamp\www\yii\blog\protected\controllers\SiteController.php (37)
+in C:\wamp\www\yii\blog\index.php (12)
+2012/10/13 17:29:54 [error] [exception.CException] exception 'CException' with message 'Property "SiteController.model" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\blog\protected\views\site\index.php(4): CComponent->__get('model')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\yii...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\yii...', Array, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\yii...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#5 C:\wamp\www\yii\blog\protected\controllers\SiteController.php(37): CController->render('index', Array)
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#7 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\wamp\www\yii\blog\index.php(12): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/blog/
+HTTP_REFERER=http://localhost/yii/
+---
+2012/10/13 17:29:55 [error] [exception.CException] exception 'CException' with message 'Property "SiteController.model" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\blog\protected\views\site\index.php(4): CComponent->__get('model')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\yii...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\yii...', Array, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\yii...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#5 C:\wamp\www\yii\blog\protected\controllers\SiteController.php(37): CController->render('index', Array)
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#7 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\wamp\www\yii\blog\index.php(12): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/blog/
+HTTP_REFERER=http://localhost/yii/
+---
+2012/10/13 17:30:27 [error] [php] Object of class CActiveDataProvider could not be converted to string (C:\wamp\www\yii\blog\protected\views\site\index.php:4)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\yii\blog\protected\controllers\SiteController.php(37): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii\blog\index.php(12): CWebApplication->run()
+REQUEST_URI=/yii/blog/
+in C:\wamp\www\yii\blog\protected\views\site\index.php (4)
+in C:\wamp\www\yii\blog\protected\controllers\SiteController.php (37)
+in C:\wamp\www\yii\blog\index.php (12)
+2012/10/13 17:38:15 [error] [exception.CException] exception 'CException' with message 'Property "CActiveDataProvider.attribute" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\blog\protected\views\site\index.php(4): CComponent->__get('attribute')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\yii...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\yii...', Array, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\yii...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#5 C:\wamp\www\yii\blog\protected\controllers\SiteController.php(37): CController->render('index', Array)
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#7 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\wamp\www\yii\blog\index.php(12): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/blog/
+HTTP_REFERER=http://localhost/yii/
+---
+2012/10/13 17:45:23 [error] [exception.CException] exception 'CException' with message 'Property "Post.0" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('0')
+#1 C:\wamp\www\yii\framework\base\CModel.php(593): CActiveRecord->__get('0')
+#2 C:\wamp\www\yii\blog\protected\views\site\index.php(4): CModel->offsetGet(0)
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\yii...')
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\yii...', Array, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\yii...', Array, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#7 C:\wamp\www\yii\blog\protected\controllers\SiteController.php(38): CController->render('index', Array)
+#8 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#9 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\yii\blog\index.php(12): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/blog/
+HTTP_REFERER=http://localhost/yii/
+---
+2012/10/13 17:47:17 [error] [php] Undefined index: post_content (C:\wamp\www\yii\blog\protected\views\site\index.php:4)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\yii\blog\protected\controllers\SiteController.php(38): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii\blog\index.php(12): CWebApplication->run()
+REQUEST_URI=/yii/blog/
+in C:\wamp\www\yii\blog\protected\views\site\index.php (4)
+in C:\wamp\www\yii\blog\protected\controllers\SiteController.php (38)
+in C:\wamp\www\yii\blog\index.php (12)
+2012/10/14 15:02:20 [error] [php] Use of undefined constant post - assumed 'post' (C:\wamp\www\yii\blog\protected\views\site\index.php:5)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\yii\blog\protected\controllers\SiteController.php(38): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii\blog\index.php(12): CWebApplication->run()
+REQUEST_URI=/yii/blog/
+in C:\wamp\www\yii\blog\protected\views\site\index.php (5)
+in C:\wamp\www\yii\blog\protected\controllers\SiteController.php (38)
+in C:\wamp\www\yii\blog\index.php (12)
+2012/10/14 15:02:31 [error] [php] Undefined variable: post (C:\wamp\www\yii\blog\protected\components\views\post_iterate.php:2)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\widgets\CWidget.php(244): PostWidget->renderFile()
+#1 C:\wamp\www\yii\blog\protected\components\PostWidget.php(8): PostWidget->render()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(174): PostWidget->run()
+#3 C:\wamp\www\yii\blog\protected\views\site\index.php(5): SiteController->widget()
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#6 C:\wamp\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#7 C:\wamp\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#8 C:\wamp\www\yii\blog\protected\controllers\SiteController.php(38): SiteController->render()
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#10 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#12 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#15 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\yii\blog\index.php(12): CWebApplication->run()
+REQUEST_URI=/yii/blog/
+in C:\wamp\www\yii\blog\protected\components\views\post_iterate.php (2)
+in C:\wamp\www\yii\blog\protected\components\PostWidget.php (8)
+in C:\wamp\www\yii\blog\protected\views\site\index.php (5)
+2012/10/14 15:03:23 [error] [php] Undefined variable: post (C:\wamp\www\yii\blog\protected\components\views\post_iterate.php:5)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\widgets\CWidget.php(244): PostWidget->renderFile()
+#1 C:\wamp\www\yii\blog\protected\components\PostWidget.php(8): PostWidget->render()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(174): PostWidget->run()
+#3 C:\wamp\www\yii\blog\protected\views\site\index.php(5): SiteController->widget()
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#6 C:\wamp\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#7 C:\wamp\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#8 C:\wamp\www\yii\blog\protected\controllers\SiteController.php(38): SiteController->render()
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#10 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#12 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#15 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\yii\blog\index.php(12): CWebApplication->run()
+REQUEST_URI=/yii/blog/
+in C:\wamp\www\yii\blog\protected\components\views\post_iterate.php (5)
+in C:\wamp\www\yii\blog\protected\components\PostWidget.php (8)
+in C:\wamp\www\yii\blog\protected\views\site\index.php (5)
+2012/10/14 15:03:54 [error] [php] Undefined index: post_title (C:\wamp\www\yii\blog\protected\components\views\post_iterate.php:6)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\widgets\CWidget.php(244): PostWidget->renderFile()
+#1 C:\wamp\www\yii\blog\protected\components\PostWidget.php(8): PostWidget->render()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(174): PostWidget->run()
+#3 C:\wamp\www\yii\blog\protected\views\site\index.php(5): SiteController->widget()
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#6 C:\wamp\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#7 C:\wamp\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#8 C:\wamp\www\yii\blog\protected\controllers\SiteController.php(38): SiteController->render()
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#10 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#12 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#15 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\yii\blog\index.php(12): CWebApplication->run()
+REQUEST_URI=/yii/blog/
+in C:\wamp\www\yii\blog\protected\components\views\post_iterate.php (6)
+in C:\wamp\www\yii\blog\protected\components\PostWidget.php (8)
+in C:\wamp\www\yii\blog\protected\views\site\index.php (5)
+2012/10/14 15:05:12 [error] [php] Trying to get property of non-object (C:\wamp\www\yii\blog\protected\components\views\post_iterate.php:6)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\widgets\CWidget.php(244): PostWidget->renderFile()
+#1 C:\wamp\www\yii\blog\protected\components\PostWidget.php(8): PostWidget->render()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(174): PostWidget->run()
+#3 C:\wamp\www\yii\blog\protected\views\site\index.php(5): SiteController->widget()
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#6 C:\wamp\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#7 C:\wamp\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#8 C:\wamp\www\yii\blog\protected\controllers\SiteController.php(38): SiteController->render()
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#10 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#12 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#15 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\yii\blog\index.php(12): CWebApplication->run()
+REQUEST_URI=/yii/blog/
+in C:\wamp\www\yii\blog\protected\components\views\post_iterate.php (6)
+in C:\wamp\www\yii\blog\protected\components\PostWidget.php (8)
+in C:\wamp\www\yii\blog\protected\views\site\index.php (5)
+2012/10/14 15:06:22 [error] [php] Use of undefined constant i - assumed 'i' (C:\wamp\www\yii\blog\protected\components\views\post_iterate.php:6)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\widgets\CWidget.php(244): PostWidget->renderFile()
+#1 C:\wamp\www\yii\blog\protected\components\PostWidget.php(8): PostWidget->render()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(174): PostWidget->run()
+#3 C:\wamp\www\yii\blog\protected\views\site\index.php(5): SiteController->widget()
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#6 C:\wamp\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#7 C:\wamp\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#8 C:\wamp\www\yii\blog\protected\controllers\SiteController.php(38): SiteController->render()
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#10 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#12 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#15 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\yii\blog\index.php(12): CWebApplication->run()
+REQUEST_URI=/yii/blog/
+in C:\wamp\www\yii\blog\protected\components\views\post_iterate.php (6)
+in C:\wamp\www\yii\blog\protected\components\PostWidget.php (8)
+in C:\wamp\www\yii\blog\protected\views\site\index.php (5)
+2012/10/14 15:06:31 [error] [php] Undefined index: create_date (C:\wamp\www\yii\blog\protected\components\views\post_iterate.php:7)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\widgets\CWidget.php(244): PostWidget->renderFile()
+#1 C:\wamp\www\yii\blog\protected\components\PostWidget.php(8): PostWidget->render()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(174): PostWidget->run()
+#3 C:\wamp\www\yii\blog\protected\views\site\index.php(5): SiteController->widget()
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#6 C:\wamp\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#7 C:\wamp\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#8 C:\wamp\www\yii\blog\protected\controllers\SiteController.php(38): SiteController->render()
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#10 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#12 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#15 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\yii\blog\index.php(12): CWebApplication->run()
+REQUEST_URI=/yii/blog/
+in C:\wamp\www\yii\blog\protected\components\views\post_iterate.php (7)
+in C:\wamp\www\yii\blog\protected\components\PostWidget.php (8)
+in C:\wamp\www\yii\blog\protected\views\site\index.php (5)
